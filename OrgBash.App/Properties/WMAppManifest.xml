@@ -4,7 +4,7 @@
   <Languages xmlns="">
     <Language code="de" />
   </Languages>
-  <App xmlns="" ProductID="{b675d567-37e8-493d-a181-7f3fcc505ec9}" Title="Bash0r" RuntimeType="Silverlight" Version="1.0.1.0" Genre="apps.normal" Author="Benjamin Sautermeister" Description="A smart bash.org reader app." Publisher="bsautermeister" PublisherID="{e43a2937-b0e2-461e-92de-cf33c1360f73}">
+  <App xmlns="" ProductID="{b675d567-37e8-493d-a181-7f3fcc505ec9}" Title="Bash0r" RuntimeType="Silverlight" Version="1.0.2.0" Genre="apps.normal" Author="Benjamin Sautermeister" Description="A smart bash.org reader app." Publisher="bsautermeister" PublisherID="{e43a2937-b0e2-461e-92de-cf33c1360f73}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
