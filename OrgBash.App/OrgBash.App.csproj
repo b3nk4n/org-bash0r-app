@@ -212,10 +212,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\flop.png" />
-    <Content Include="Assets\german-bash0r.png" />
     <Content Include="Assets\icon.png" />
     <Content Include="Assets\favorites.png" />
     <Content Include="Assets\latest.png" />
+    <Content Include="Assets\OrgBash0r_header.png" />
     <Content Include="Assets\random.png" />
     <Content Include="Assets\shareclip.png" />
     <Content Include="Assets\sharecontent.png" />
