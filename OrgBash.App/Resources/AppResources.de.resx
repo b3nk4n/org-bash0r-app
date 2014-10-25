@@ -237,11 +237,11 @@ Das würde uns sehr motivieren um die App noch besser zu machen!</value>
     <comment>CategoryPage</comment>
   </data>
   <data name="CategoryTopQuotes" xml:space="preserve">
-    <value>Top 50 Zitate</value>
+    <value>Top 100 Zitate</value>
     <comment>Misc</comment>
   </data>
   <data name="CategoryTopQuotesNL" xml:space="preserve">
-    <value>Top 50
+    <value>Top 100
 Zitate</value>
     <comment>Misc</comment>
   </data>
@@ -254,11 +254,11 @@ Zitate</value>
 Favoriten</value>
     <comment>Misc</comment>
   </data>
-  <data name="CategoryNewQuotes" xml:space="preserve">
+  <data name="CategoryLatestQuotes" xml:space="preserve">
     <value>Neue Zitate</value>
     <comment>Misc</comment>
   </data>
-  <data name="CategoryNewQuotesNL" xml:space="preserve">
+  <data name="CategoryLatestQuotesNL" xml:space="preserve">
     <value>Neue
 Zitate</value>
     <comment>Misc</comment>
@@ -452,15 +452,6 @@ Füge die besten Bash-Zitate zu deinen Favoriten hinzu...</value>
   <data name="EasterEggTitle" xml:space="preserve">
     <value>Awesome!</value>
     <comment>EasterEgg</comment>
-  </data>
-  <data name="CategoryFlopQuotes" xml:space="preserve">
-    <value>Flop 50 Zitate</value>
-    <comment>Misc</comment>
-  </data>
-  <data name="CategoryFlopQuotesNL" xml:space="preserve">
-    <value>Flop 50
-Zitate</value>
-    <comment>Misc</comment>
   </data>
   <data name="NoDataOrInternetInfo" xml:space="preserve">
     <value>Leider konnten keine Daten gelanden werden. Das kann nur drei Dinge bedeuten. Entweder hast du keine Internetverbindung, die Server sind offline, oder die Erde wird von Aliens angegriffen...</value>

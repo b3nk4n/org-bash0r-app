@@ -123,9 +123,6 @@ namespace OrgBash.App.ViewModels
                 case AppConstants.ORDER_VALUE_TOP:
                     CategoryState = CategoryState.Top;
                     break;
-                case AppConstants.ORDER_VALUE_FLOP:
-                    CategoryState = CategoryState.Flop;
-                    break;
                 case AppConstants.ORDER_VALUE_LATEST:
                     CategoryState = CategoryState.New;
                     break;

@@ -9,7 +9,7 @@ using System.Windows.Navigation;
 
 namespace OrgBash.App.ViewModels
 {
-    public enum CategoryState { None, New, Top, Flop, Random, Search, Favorites }
+    public enum CategoryState { None, New, Top, Random, Search, Favorites }
 
     interface ICategoryViewModel
     {

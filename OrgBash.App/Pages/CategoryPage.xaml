@@ -328,7 +328,7 @@
             </ScrollViewer>
 
             <Grid x:Name="AdContainer" Grid.Row="2" Height="80" Width="480">
-                <advert:MsDuplexAdControl Height="80" Width="480" AdDuplexAppId="120987" MsAdUnitId="192727" MsApplicationId="a95892a1-a7c0-431e-87e5-b182bd618409" AdReceived="AdReceived" />
+                <advert:MsDuplexAdControl Height="80" Width="480" AdDuplexAppId="121575" MsAdUnitId="193252" MsApplicationId="e904cda0-0f98-4716-a5ca-3df6b67e4166" AdReceived="AdReceived" />
                 <Image x:Name="StaticBannerImage" Source="/Assets/Ads/Photo-Info_adduplex_german.png" Width="480" Height="80" Tap="PhotoInfoTapped" />
                 <Border Width="28" Height="28" Margin="1" VerticalAlignment="Top" HorizontalAlignment="Right" Background="{StaticResource ThemeBrushRed}" Tap="RemoveAdsTapped">
                     <Path Width="20" Height="20" Canvas.Left="22.1666" Canvas.Top="22.1667" Stretch="Fill" Fill="{StaticResource ThemeBrushGray}" Data="F1 M 26.9166,22.1667L 37.9999,33.25L 49.0832,22.1668L 53.8332,26.9168L 42.7499,38L 53.8332,49.0834L 49.0833,53.8334L 37.9999,42.75L 26.9166,53.8334L 22.1666,49.0833L 33.25,38L 22.1667,26.9167L 26.9166,22.1667 Z "/>

@@ -80,11 +80,8 @@ namespace OrgBash.App.Pages
                     case AppConstants.ORDER_VALUE_TOP:
                         PageTitle.Text = AppResources.CategoryTopQuotes;
                         break;
-                    case AppConstants.ORDER_VALUE_FLOP:
-                        PageTitle.Text = AppResources.CategoryFlopQuotes;
-                        break;
                     case AppConstants.ORDER_VALUE_LATEST:
-                        PageTitle.Text = AppResources.CategoryNewQuotes;
+                        PageTitle.Text = AppResources.CategoryLatestQuotes;
                         break;
                     case AppConstants.ORDER_VALUE_RANDOM:
                         PageTitle.Text = AppResources.CategoryRandomQuotes;

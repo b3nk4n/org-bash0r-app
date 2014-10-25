@@ -24,7 +24,6 @@ namespace OrgBash.Common
 
         public const string ORDER_VALUE_LATEST = "latest";
         public const string ORDER_VALUE_TOP = "top";
-        public const string ORDER_VALUE_FLOP = "flop";
         public const string ORDER_VALUE_RANDOM = "random";
 
         public const string ACTION_VOTE = "vote";

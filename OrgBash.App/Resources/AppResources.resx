@@ -236,11 +236,11 @@ Showing us some love on the store helps us to continue to work on the app and ma
     <comment>CategoryPage</comment>
   </data>
   <data name="CategoryTopQuotes" xml:space="preserve">
-    <value>Top 50 quotes</value>
+    <value>Top 100 quotes</value>
     <comment>Misc</comment>
   </data>
   <data name="CategoryTopQuotesNL" xml:space="preserve">
-    <value>Top 50
+    <value>Top 100
 quotes</value>
     <comment>Misc</comment>
   </data>
@@ -253,11 +253,11 @@ quotes</value>
 favorites</value>
     <comment>Misc</comment>
   </data>
-  <data name="CategoryNewQuotes" xml:space="preserve">
+  <data name="CategoryLatestQuotes" xml:space="preserve">
     <value>New quotes</value>
     <comment>Misc</comment>
   </data>
-  <data name="CategoryNewQuotesNL" xml:space="preserve">
+  <data name="CategoryLatestQuotesNL" xml:space="preserve">
     <value>New
 quotes</value>
     <comment>Misc</comment>
@@ -451,15 +451,6 @@ Add your most favorite bash quotes to your favorites...</value>
   <data name="EasterEggTitle" xml:space="preserve">
     <value>Awesome!</value>
     <comment>EasterEgg</comment>
-  </data>
-  <data name="CategoryFlopQuotes" xml:space="preserve">
-    <value>Flop 50 quotes</value>
-    <comment>Misc</comment>
-  </data>
-  <data name="CategoryFlopQuotesNL" xml:space="preserve">
-    <value>Flop 50
-quotes</value>
-    <comment>Misc</comment>
   </data>
   <data name="NoDataOrInternetInfo" xml:space="preserve">
     <value>There has been troubles with loading the data. There can be only three reasons for this. Firstly, you have no internet connection. Seconds, all servers are down. And last but not least, the earth is attacked by aliens...</value>

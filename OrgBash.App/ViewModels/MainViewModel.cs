@@ -188,10 +188,8 @@ namespace OrgBash.App.ViewModels
             {
                 case AppConstants.ORDER_VALUE_TOP:
                     return AppResources.CategoryTopQuotes;
-                case AppConstants.ORDER_VALUE_FLOP:
-                    return AppResources.CategoryFlopQuotes;
                 case AppConstants.ORDER_VALUE_LATEST:
-                    return AppResources.CategoryNewQuotes;
+                    return AppResources.CategoryLatestQuotes;
                 case AppConstants.ORDER_VALUE_RANDOM:
                     return AppResources.CategoryRandomQuotes;
                 case AppConstants.PARAM_FAVORITES:

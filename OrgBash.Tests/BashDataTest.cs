@@ -180,7 +180,37 @@ namespace OrgBash.Tests
             PerformDataTest(text, 6, 4);
         }
 
-        private static void PerformDataTest(string text, int quotesCount, int personsCount)
+        // #################### BASH.ORG #########################
+
+        [TestMethod]
+        public void BashDataDoublePointStart()
+        {
+            string text = "** You are now chatting in #fantendo[newline]" +
+                "<Corbeb>: i've just realized that we talk about porn here more than we talk about fantendo[newline]" +
+                "<Corbeb>: lol[newline]" +
+                "<NoontimeYoshi>: whats a fantendo[newline]" +
+                "<Hemu>: fantendo?";
+            var data = PerformDataTest(text, 5, 3);
+
+            Assert.AreEqual(true, data.QuoteItems[0].PersonIndex == -1);
+            Assert.AreEqual(false, data.QuoteItems[1].Text.StartsWith(": "));
+        }
+
+
+        [TestMethod]
+        public void BashDataNameAndDoublePointStart()
+        {
+            string text = "fr0gman: my ex gf is blowing up my phooine[newline]" +
+                "fr0gman: and sent me emails[newline]" +
+                "fr0gman: and is trying to call me from a blocked number lol[newline]" +
+                "fr0gman: AT LEAST I FEEL WANTED THIS VALENTINE'S[newline]" +
+                "oldmadtom: she wants the d[newline]" +
+                "fr0gman: ya[newline]" +
+                "fr0gman: i should be like \"Happy Valentine's ay... you'll get the D later\"";
+            PerformDataTest(text, 7, 2);
+        }
+
+        private static BashData PerformDataTest(string text, int quotesCount, int personsCount)
         {
             var bashData = CreateBashData(text);
             var parsedQuote = bashData.QuoteItems;
@@ -192,6 +222,7 @@ namespace OrgBash.Tests
                 max = Math.Max(max, item.PersonIndex);
             }
             Assert.AreEqual<int>(personsCount, max + 1);
+            return bashData;
         }
 
         private static BashData CreateBashData(string text)

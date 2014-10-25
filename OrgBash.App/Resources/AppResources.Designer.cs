@@ -287,30 +287,11 @@ namespace OrgBash.App.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Flop 50 quotes ähnelt.
-        /// </summary>
-        public static string CategoryFlopQuotes {
-            get {
-                return ResourceManager.GetString("CategoryFlopQuotes", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Flop 50
-        ///quotes ähnelt.
-        /// </summary>
-        public static string CategoryFlopQuotesNL {
-            get {
-                return ResourceManager.GetString("CategoryFlopQuotesNL", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die New quotes ähnelt.
         /// </summary>
-        public static string CategoryNewQuotes {
+        public static string CategoryLatestQuotes {
             get {
-                return ResourceManager.GetString("CategoryNewQuotes", resourceCulture);
+                return ResourceManager.GetString("CategoryLatestQuotes", resourceCulture);
             }
         }
         
@@ -318,9 +299,9 @@ namespace OrgBash.App.Resources {
         ///   Sucht eine lokalisierte Zeichenfolge, die New
         ///quotes ähnelt.
         /// </summary>
-        public static string CategoryNewQuotesNL {
+        public static string CategoryLatestQuotesNL {
             get {
-                return ResourceManager.GetString("CategoryNewQuotesNL", resourceCulture);
+                return ResourceManager.GetString("CategoryLatestQuotesNL", resourceCulture);
             }
         }
         
@@ -353,7 +334,7 @@ namespace OrgBash.App.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Top 50 quotes ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Top 100 quotes ähnelt.
         /// </summary>
         public static string CategoryTopQuotes {
             get {
@@ -362,7 +343,7 @@ namespace OrgBash.App.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Top 50
+        ///   Sucht eine lokalisierte Zeichenfolge, die Top 100
         ///quotes ähnelt.
         /// </summary>
         public static string CategoryTopQuotesNL {
