@@ -232,7 +232,7 @@ namespace OrgBash.App.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 1.0 ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1.0.1 ähnelt.
         /// </summary>
         public static string ApplicationVersion {
             get {
