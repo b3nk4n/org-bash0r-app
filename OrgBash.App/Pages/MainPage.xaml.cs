@@ -21,7 +21,7 @@ using OrgBash.App.Helpers;
 
 namespace OrgBash.App.Pages
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : ChangeableBackgroundPhoneApplicationPage
     {
         IMainViewModel _mainViewModel;
 

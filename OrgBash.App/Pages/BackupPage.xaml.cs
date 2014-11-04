@@ -10,7 +10,7 @@ using Microsoft.Phone.Shell;
 
 namespace OrgBash.App.Pages
 {
-    public partial class BackupPage : PhoneApplicationPage
+    public partial class BackupPage : ChangeableBackgroundPhoneApplicationPage
     {
         public BackupPage()
         {

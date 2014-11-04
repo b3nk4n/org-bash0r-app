@@ -496,4 +496,12 @@ Add your most favorite bash quotes to your favorites...</value>
     <value>settings</value>
     <comment>AppBar</comment>
   </data>
+  <data name="SettingsDarkerBackground" xml:space="preserve">
+    <value>Apply darker background</value>
+    <comment>SettingsPage</comment>
+  </data>
+  <data name="SettingsGeneral" xml:space="preserve">
+    <value>General</value>
+    <comment>SettingsPage</comment>
+  </data>
 </root>

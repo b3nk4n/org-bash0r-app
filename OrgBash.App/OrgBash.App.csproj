@@ -122,6 +122,7 @@
     <Compile Include="Pages\CategoryPage.xaml.cs">
       <DependentUpon>CategoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ChangeableBackgroundPhoneApplicationPage.cs" />
     <Compile Include="Pages\ColorPickerPage.xaml.cs">
       <DependentUpon>ColorPickerPage.xaml</DependentUpon>
     </Compile>

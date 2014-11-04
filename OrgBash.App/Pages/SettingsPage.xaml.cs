@@ -16,7 +16,7 @@ using System.Windows.Media;
 
 namespace OrgBash.App.Pages
 {
-    public partial class SettingsPage : PhoneApplicationPage
+    public partial class SettingsPage : ChangeableBackgroundPhoneApplicationPage
     {
         /// <summary>
         /// The photo chooser task.
@@ -60,14 +60,26 @@ namespace OrgBash.App.Pages
                 Settings.LockScreenBackgroundImagePath.Value = null;
                 UpdatePreviewImage();
             };
+
+            DarkerBackgroundCheckBox.Checked += (s, e) =>
+            {
+                Settings.DarkBackground.Value = DarkerBackgroundCheckBox.IsChecked.Value;
+                UpdateBackground();
+            };
+            DarkerBackgroundCheckBox.Unchecked += (s, e) =>
+            {
+                Settings.DarkBackground.Value = DarkerBackgroundCheckBox.IsChecked.Value;
+                UpdateBackground();
+            };
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
 
-            // update slider value for opacity
+            // load settings
             BackgroundImageOpacitySlider.Value = Settings.LockScreenBackgroundImageOpacity.Value;
+            DarkerBackgroundCheckBox.IsChecked = Settings.DarkBackground.Value;
 
             UpdatePreviewImage();
         }
@@ -76,8 +88,9 @@ namespace OrgBash.App.Pages
         {
             base.OnNavigatedFrom(e);
 
-            // store slider value for opacity
+            // save settings
             Settings.LockScreenBackgroundImageOpacity.Value = BackgroundImageOpacitySlider.Value;
+            Settings.DarkBackground.Value = DarkerBackgroundCheckBox.IsChecked.Value;
         }
 
         /// <summary>

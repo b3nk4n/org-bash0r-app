@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage
+﻿<pages:ChangeableBackgroundPhoneApplicationPage
     x:Class="OrgBash.App.Pages.InAppStorePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,11 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:OrgBash.App.Controls"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:pages="clr-namespace:OrgBash.App.Pages"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
+    Background="{StaticResource ThemeBrushGray}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    x:Name="RootElement">
 
     <toolkit:TransitionService.NavigationInTransition>
         <toolkit:NavigationInTransition>
@@ -36,7 +39,7 @@
     </toolkit:TransitionService.NavigationOutTransition>
 
     <!--LayoutRoot ist das Stammraster, in dem alle anderen Seiteninhalte platziert werden-->
-    <Grid x:Name="LayoutRoot" Background="{StaticResource ThemeBrushGray}">
+    <Grid x:Name="LayoutRoot" Background="{Binding ElementName=RootElement, Path=Background}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -53,4 +56,4 @@
         </Grid>
     </Grid>
 
-</phone:PhoneApplicationPage>
+</pages:ChangeableBackgroundPhoneApplicationPage>

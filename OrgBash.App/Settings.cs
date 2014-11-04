@@ -6,6 +6,11 @@ namespace OrgBash.App
     public static class Settings
     {
         /// <summary>
+        /// Settings to enforce dark Background (energy save mode).
+        /// </summary>
+        public static readonly StoredObject<bool> DarkBackground = new StoredObject<bool>("darkBackground", false);
+
+        /// <summary>
         /// Setting for the lockscreen background image path in isolated storage.
         /// </summary>
         /// <remarks>

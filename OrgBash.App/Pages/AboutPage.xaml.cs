@@ -11,7 +11,7 @@ using OrgBash.App.Helpers;
 
 namespace OrgBash.App.Pages
 {
-    public partial class AboutPage : PhoneApplicationPage
+    public partial class AboutPage : ChangeableBackgroundPhoneApplicationPage
     {
         public AboutPage()
         {

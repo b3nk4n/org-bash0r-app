@@ -10,7 +10,7 @@ using Microsoft.Phone.Shell;
 
 namespace OrgBash.App.Pages
 {
-    public partial class InAppStorePage : PhoneApplicationPage
+    public partial class InAppStorePage : ChangeableBackgroundPhoneApplicationPage
     {
         public InAppStorePage()
         {

@@ -16,7 +16,7 @@ using OrgBash.App.Helpers;
 
 namespace OrgBash.App.Pages
 {
-    public partial class CategoryPage : PhoneApplicationPage
+    public partial class CategoryPage : ChangeableBackgroundPhoneApplicationPage
     {
         private const int SWIPE_LIMIT = 1000;
 

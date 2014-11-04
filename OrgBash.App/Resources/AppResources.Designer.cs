@@ -819,6 +819,24 @@ namespace OrgBash.App.Resources {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apply darker background ähnelt.
+        /// </summary>
+        public static string SettingsDarkerBackground {
+            get {
+                return ResourceManager.GetString("SettingsDarkerBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die General ähnelt.
+        /// </summary>
+        public static string SettingsGeneral {
+            get {
+                return ResourceManager.GetString("SettingsGeneral", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Lock screen ähnelt.
         /// </summary>
         public static string SettingsLockScreen {

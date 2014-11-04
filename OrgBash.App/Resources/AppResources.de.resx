@@ -497,4 +497,12 @@ Füge die besten Bash-Zitate zu deinen Favoriten hinzu...</value>
     <value>einstellungen</value>
     <comment>AppBar</comment>
   </data>
+  <data name="SettingsDarkerBackground" xml:space="preserve">
+    <value>Hintergrund verdunkeln</value>
+    <comment>SettingsPage</comment>
+  </data>
+  <data name="SettingsGeneral" xml:space="preserve">
+    <value>Allgemein</value>
+    <comment>SettingsPage</comment>
+  </data>
 </root>

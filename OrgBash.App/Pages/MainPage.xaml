@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage
+﻿<pages:ChangeableBackgroundPhoneApplicationPage
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -12,15 +12,16 @@
     xmlns:lconv="clr-namespace:OrgBash.App.Conversion"
     xmlns:abu="clr-namespace:AppBarUtils;assembly=AppBarUtils"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:pages="clr-namespace:OrgBash.App.Pages"
     x:Class="OrgBash.App.Pages.MainPage"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
+    Background="{StaticResource ThemeBrushGray}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     x:Name="RootElement">
-	<phone:PhoneApplicationPage.Resources>
-        
+    <pages:ChangeableBackgroundPhoneApplicationPage.Resources>
         <conv:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
         <lconv:BooleanToAwesomeEditionImageConverter x:Key="BoolToAwesomeEditionImageConverter" />
         
@@ -56,7 +57,7 @@
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
-    </phone:PhoneApplicationPage.Resources>
+    </pages:ChangeableBackgroundPhoneApplicationPage.Resources>
 
     <toolkit:TransitionService.NavigationInTransition>
         <toolkit:NavigationInTransition>
@@ -79,7 +80,7 @@
         </toolkit:NavigationOutTransition>
     </toolkit:TransitionService.NavigationOutTransition>
 
-    <Grid x:Name="LayoutRoot" Background="{StaticResource ThemeBrushGray}">
+    <Grid x:Name="LayoutRoot" Background="{Binding ElementName=RootElement, Path=Background}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -184,7 +185,7 @@
         <local:LocalizedFeedbackDialogControl Grid.RowSpan="2" EnableAnimation="True" />
     </Grid>
 
-    <phone:PhoneApplicationPage.ApplicationBar>
+    <pages:ChangeableBackgroundPhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar ForegroundColor="{StaticResource ThemeColorGray}" BackgroundColor="{StaticResource ThemeColorGrayDark}"
                               Opacity="0.99">
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/questionmark.png" Text="id_about"/>
@@ -194,7 +195,7 @@
                 <shell:ApplicationBarMenuItem Text="id_backup"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
+    </pages:ChangeableBackgroundPhoneApplicationPage.ApplicationBar>
 
     <i:Interaction.Behaviors>
         <abu:AppBarItemNavigation Type="Button" Id="id_about" Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" TargetPage="/Pages/AboutPage.xaml"/>
@@ -203,4 +204,4 @@
         <abu:AppBarItemCommand Type="MenuItem" Id="id_backup" Text="{Binding Path=LocalizedResources.AppBarBackup, Source={StaticResource LocalizedStrings}}" Command="{Binding BackupCommand}" />
     </i:Interaction.Behaviors>
 
-</phone:PhoneApplicationPage>
+</pages:ChangeableBackgroundPhoneApplicationPage>

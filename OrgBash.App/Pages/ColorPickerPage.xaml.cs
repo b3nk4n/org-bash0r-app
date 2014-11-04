@@ -11,7 +11,7 @@ using System.Windows.Media;
 
 namespace OrgBash.App.Pages
 {
-    public partial class ColorPickerPage : PhoneApplicationPage
+    public partial class ColorPickerPage : ChangeableBackgroundPhoneApplicationPage
     {
         static string[] colorNames =
             {

@@ -77,6 +77,16 @@ namespace OrgBash.Common.Models
                         nameOpen = conversationPart.IndexOf('(');
                         nameClose = conversationPart.IndexOf(')');
                     }
+                    if (nameOpen == -1 && nameClose == -1)
+                    {
+                        nameOpen = conversationPart.IndexOf('[');
+                        nameClose = conversationPart.IndexOf(']');
+                    }
+                    if (nameOpen == -1 && nameClose == -1)
+                    {
+                        nameOpen = 0;
+                        nameClose = conversationPart.IndexOf("| ");
+                    }
                     int nameDoublePointFinish = conversationPart.IndexOf(':'); // 2. type of quotes (bash.org only)
                     int heightScore = 0;
 
@@ -229,6 +239,8 @@ namespace OrgBash.Common.Models
                     text.Contains(" designed this dc to dc power ") ||
                     text.Contains(" sent the satellite into orbit ") ||
                     text.Contains(" has changed topic for ") ||
+                    text.Contains(" is omfg") ||
+                    text.Contains(" datacide looks desperate") ||
                     text.Contains(" is away -")) ||
                 text.Contains(" has quit IRC") ||
                 text.Equals("10 minutes later.") ||
