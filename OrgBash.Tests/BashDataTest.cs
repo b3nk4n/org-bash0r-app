@@ -51,19 +51,6 @@ namespace OrgBash.Tests
         }
 
         [TestMethod]
-        public void BashDataSimpleWithCustom1hLater()
-        {
-            string text = "<iSi> also dann bis gleich ld[newline]" +
-                "<shocker> jo, ich komm mit dem rad, bin dann in 10 minuten da. ida[newline]" +
-                "---- 1 Stunde später ----[newline]" + // <--
-                "<iSi> du willst mich verarschen oder? wo bleibst du denn?[newline]" +
-                "<shocker> sorry, timo kam mit nem kasten vorbei[newline]" +
-                "<iSi> ...arschloch[newline]" +
-                "<shocker> cheers!";
-            PerformDataTest(text, 7, 2);
-        }
-
-        [TestMethod]
         public void BashDataComplexWithCustomServerKickAndJoinInfo()
         {
             string text = "<Rigel> KingKashue dein pc ist nicht so 1337 wie meiner ich hab einen 122 ghz core32octa pc mit 5 617 terabyte festplatten ein dvd-bluray-hd-wr-rwr-drwxr-xr-x brenner mit 37 gigehurz L7 cache und 586 zoll lsd monitor mit 4325x2341 auflösung aber das beste ist das 400 gbps kabel, mit dem ich meine 25132 Mbit/s Internetleitung routen kann[newline]" +

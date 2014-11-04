@@ -58,7 +58,15 @@ namespace OrgBash.Common.Data
             if (response.IsSuccessStatusCode)
             {
                 var encodedData = await ReadEncodedContentAsync(response);
-                return JsonConvert.DeserializeObject<BashCollection>(encodedData);
+                try
+                {
+                    return JsonConvert.DeserializeObject<BashCollection>(encodedData);
+                }
+                catch (JsonReaderException)
+                {
+                    return null; // TODO: find reason for parsing errors.
+                }
+
             }
 
             return null;
@@ -77,7 +85,14 @@ namespace OrgBash.Common.Data
             if (response.IsSuccessStatusCode)
             {
                 var encodedData = await ReadEncodedContentAsync(response);
-                return JsonConvert.DeserializeObject<BashCollection>(encodedData);
+                try
+                {
+                    return JsonConvert.DeserializeObject<BashCollection>(encodedData);
+                }
+                catch (JsonReaderException)
+                {
+                    return null; // TODO: find reason for parsing errors.
+                }
             }
 
             return null;
