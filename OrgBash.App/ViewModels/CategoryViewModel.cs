@@ -48,7 +48,6 @@ namespace OrgBash.App.ViewModels
         private DelegateCommand _openInBrowserCommand;
 
         private const string KEY_CURRENT_INDEX = "current_index";
-        private const string KEY_CURRENT_ID = "current_id";
 
         private bool _isBusy;
 
@@ -104,11 +103,6 @@ namespace OrgBash.App.ViewModels
                 IsBusy = false;
                 ShowLoadingFailedInfo = true;
                 return false;
-            }
-
-            if (order == AppConstants.ORDER_VALUE_RANDOM)
-            {
-                result.Contents.Data.ShuffleList();
             }
 
             BashCollection = result;
@@ -170,9 +164,6 @@ namespace OrgBash.App.ViewModels
        public void SaveState()
         {
             PhoneStateHelper.SaveValue(KEY_CURRENT_INDEX, CurrentBashDataIndex);
-
-            if (CurrentBashData != null && CategoryState == ViewModels.CategoryState.Random)
-                PhoneStateHelper.SaveValue(KEY_CURRENT_ID, CurrentBashData.Id); // to restore the current item for random category
         }
 
         public void RestoreState()
@@ -182,35 +173,6 @@ namespace OrgBash.App.ViewModels
             {
                 index = PhoneStateHelper.LoadValue<int>(KEY_CURRENT_INDEX);
                 CurrentBashDataIndex = Math.Min(index, BashCount - 1);
-            }
-            if (index != -1 && CurrentBashData != null && BashCollection != null && BashCount > 1)
-            {
-                if (PhoneStateHelper.ValueExists(KEY_CURRENT_ID))
-                {
-                    var id = PhoneStateHelper.LoadValue<int>(KEY_CURRENT_ID);
-                    int counter = 0;
-                    int? position = null;
-                    
-                    // move the bash data with the id to the current index
-                    foreach (var item in BashCollection.Contents.Data)
-                    {
-                        if (item.Id == id)
-                        {
-                            position = counter;
-                            break;
-                        }
-                        ++counter;
-                    }
-
-                    if (position != null)
-                    {
-                        // swap
-                        var tmp = BashCollection.Contents.Data[position.Value];
-                        BashCollection.Contents.Data[position.Value] = BashCollection.Contents.Data[index];
-                        BashCollection.Contents.Data[index] = tmp;
-                        NotifyPropertyChanged("CurrentBashData");
-                    }
-                }
             }
         }
 
