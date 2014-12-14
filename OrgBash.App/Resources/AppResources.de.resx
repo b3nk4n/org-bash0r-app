@@ -142,7 +142,7 @@
     <comment>General</comment>
   </data>
   <data name="ApplicationVersion" xml:space="preserve">
-    <value>1.1</value>
+    <value>1.2</value>
     <comment>General</comment>
   </data>
   <data name="Contributors" xml:space="preserve">
@@ -185,11 +185,11 @@ Erzählen Sie uns von Ihren Erfahrungen oder teilen Sie uns Vorschläge mit, dam
     <comment>FeedbackDialogControl</comment>
   </data>
   <data name="FeedbackYesText" xml:space="preserve">
-    <value>feedback</value>
+    <value>Feedback</value>
     <comment>FeedbackDialogControl</comment>
   </data>
   <data name="MoreApps" xml:space="preserve">
-    <value>mehr apps</value>
+    <value>Mehr Apps</value>
     <comment>AboutPage</comment>
   </data>
   <data name="PrivacyInfo" xml:space="preserve">
@@ -225,15 +225,15 @@ Das würde uns sehr motivieren um die App noch besser zu machen!</value>
     <comment>FeedbackDialogControl</comment>
   </data>
   <data name="SupportAndFeedback" xml:space="preserve">
-    <value>hilfe und feedback</value>
+    <value>Hilfe und Feedback</value>
     <comment>About Page</comment>
   </data>
   <data name="AppBarAddToFavorites" xml:space="preserve">
-    <value>zu favoriten hinzufügen</value>
+    <value>Favorit markieren</value>
     <comment>CategoryPage</comment>
   </data>
   <data name="AppBarRemoveFromFavorites" xml:space="preserve">
-    <value>favorit entfernen</value>
+    <value>Favorit entfernen</value>
     <comment>CategoryPage</comment>
   </data>
   <data name="CategoryTopQuotes" xml:space="preserve">
@@ -289,23 +289,23 @@ Zitate</value>
     <comment>MessageBox</comment>
   </data>
   <data name="AppBarAddFav" xml:space="preserve">
-    <value>zu favoriten hinzufügen</value>
+    <value>Favorit markieren</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarRefresh" xml:space="preserve">
-    <value>aktualisieren</value>
+    <value>Aktualisieren</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarRemoveFav" xml:space="preserve">
-    <value>favorit entfernen</value>
+    <value>Favorit entfernen</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarShare" xml:space="preserve">
-    <value>teilen...</value>
+    <value>Versenden...</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarShowComments" xml:space="preserve">
-    <value>kommentare anzeigen</value>
+    <value>Kommentare anzeigen</value>
     <comment>AppBar</comment>
   </data>
   <data name="CommentsTitle" xml:space="preserve">
@@ -325,15 +325,15 @@ Zitate</value>
     <comment>MainPage</comment>
   </data>
   <data name="AppBarJumpTo" xml:space="preserve">
-    <value>springe zu...</value>
+    <value>Springe zu...</value>
     <comment>AppBar</comment>
   </data>
   <data name="Copy" xml:space="preserve">
-    <value>kopieren</value>
+    <value>Kopieren</value>
     <comment>General</comment>
   </data>
   <data name="InAppStoreLoading" xml:space="preserve">
-    <value>lade...</value>
+    <value>Laden...</value>
     <comment>InAppStorePage</comment>
   </data>
   <data name="InAppStoreNoProducts" xml:space="preserve">
@@ -365,7 +365,7 @@ Zitate</value>
     <comment>Backup</comment>
   </data>
   <data name="CreateBackupHeaderText" xml:space="preserve">
-    <value>erstellen</value>
+    <value>Erstellen</value>
     <comment>Backup</comment>
   </data>
   <data name="Login" xml:space="preserve">
@@ -401,7 +401,7 @@ Zitate</value>
     <comment>Backup</comment>
   </data>
   <data name="RestoreBackupHeaderText" xml:space="preserve">
-    <value>wiederherstellen</value>
+    <value>Wiederherstellen</value>
     <comment>Backup</comment>
   </data>
   <data name="RestoreInfoText" xml:space="preserve">
@@ -409,7 +409,7 @@ Zitate</value>
     <comment>Backup</comment>
   </data>
   <data name="AppBarOpenInBrowser" xml:space="preserve">
-    <value>im browser öffnen</value>
+    <value>Im Browser öffnen</value>
     <comment>AppBar</comment>
   </data>
   <data name="FavoritesInfo" xml:space="preserve">
@@ -418,23 +418,23 @@ Füge die besten Bash-Zitate zu deinen Favoriten hinzu...</value>
     <comment>CategoryPage</comment>
   </data>
   <data name="AppBarAbout" xml:space="preserve">
-    <value>hilfe</value>
+    <value>Hilfe</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarBackup" xml:space="preserve">
-    <value>favoriten in onedrive sichern</value>
+    <value>Favoriten in onedrive sichern</value>
     <comment>ApPBar</comment>
   </data>
   <data name="AppBarSetLockScreen" xml:space="preserve">
-    <value>als lockscreen festlegen</value>
+    <value>Als Sperrbildschirm festlegen</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarNext" xml:space="preserve">
-    <value>weiter</value>
+    <value>Weiter</value>
     <comment>AppBar</comment>
   </data>
   <data name="AppBarPrevious" xml:space="preserve">
-    <value>zurück</value>
+    <value>Zurück</value>
     <comment>AppBar</comment>
   </data>
   <data name="SearchNoResultsInfo" xml:space="preserve">
@@ -442,7 +442,7 @@ Füge die besten Bash-Zitate zu deinen Favoriten hinzu...</value>
     <comment>CategoryPage</comment>
   </data>
   <data name="PinToStart" xml:space="preserve">
-    <value>auf startseite</value>
+    <value>Auf Startseite</value>
     <comment>MainPage</comment>
   </data>
   <data name="EasterEggMessage" xml:space="preserve">
@@ -494,7 +494,7 @@ Füge die besten Bash-Zitate zu deinen Favoriten hinzu...</value>
     <comment>SettingsPage</comment>
   </data>
   <data name="AppBarSettings" xml:space="preserve">
-    <value>einstellungen</value>
+    <value>Einstellungen</value>
     <comment>AppBar</comment>
   </data>
   <data name="SettingsDarkerBackground" xml:space="preserve">
