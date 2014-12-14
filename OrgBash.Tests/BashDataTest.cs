@@ -197,6 +197,40 @@ namespace OrgBash.Tests
             PerformDataTest(text, 7, 2);
         }
 
+        // ### added in version 1.2 ###
+
+        [TestMethod]
+        public void BashDataSingleServerMessage()
+        {
+            string text = "* iban is going to invent a marriage simulator. It's a blowup doll that sits on the couch, takes your money, and slowly inflates larger and larger";
+            var data = PerformDataTest(text, 1, 1);
+
+            Assert.AreEqual(true, data.QuoteItems[0].PersonIndex == -1);
+        }
+
+        [TestMethod]
+        public void BashDataWithCurlyBrackets()
+        {
+            string text = "{+GhETToHooLIgAn|CM} soemtime[newline]" + 
+                "{+GhETToHooLIgAn|CM} or get huge ass fan[newline]" + 
+                "{+GhETToHooLIgAn|CM} :D[newline]" + 
+                "{@III-wiz} quiet*[newline]" + 
+                "{@III-wiz} wiz*[newline]" + 
+                "{+GhETToHooLIgAn|CM} wel ima putt a courq in yer moth[newline]" + 
+                "{+GhETToHooLIgAn|CM} :D[newline]" + 
+                "{@III-wiz} cork*[newline]{@III-wiz} mouth*[newline]" + 
+                "{@III-wiz} pu...fuckit[newline]" + 
+                "{+GhETToHooLIgAn|CM} put*[newline]" + 
+                "{+GhETToHooLIgAn|CM} gedez[newline]" + 
+                "{@Stoner-EH} yer ferkin nutz whiz[newline]" + 
+                "{+GhETToHooLIgAn|CM} where idd u take eglsh?[newline]" + 
+                "{@Stoner-EH} engish?[newline]" + 
+                "{@Stoner-EH} err[newline]" + 
+                "{@Stoner-EH} engrish[newline]" + 
+                "{+GhETToHooLIgAn|CM} i tink dis es besh.org materl";
+            PerformDataTest(text, 18, 3);
+        }
+
         private static BashData PerformDataTest(string text, int quotesCount, int personsCount)
         {
             var bashData = CreateBashData(text);

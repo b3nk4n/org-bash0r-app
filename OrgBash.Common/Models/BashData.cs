@@ -84,6 +84,11 @@ namespace OrgBash.Common.Models
                     }
                     if (nameOpen == -1 && nameClose == -1)
                     {
+                        nameOpen = conversationPart.IndexOf('{');
+                        nameClose = conversationPart.IndexOf('}');
+                    }
+                    if (nameOpen == -1 && nameClose == -1)
+                    {
                         nameOpen = 0;
                         nameClose = conversationPart.IndexOf("| ");
                     }
@@ -165,6 +170,25 @@ namespace OrgBash.Common.Models
                     });
                 }
 
+                if (result.Count == 0)
+                {
+                    var singleResult = new BashQuoteItem();
+                    singleResult.HeightScore = 3;
+                    singleResult.IndexPosition = 0;
+                    singleResult.Nick = string.Empty;
+                    singleResult.PersonIndex = -1;
+                    singleResult.Text = string.Empty;
+
+                    foreach (var item in splittedConversation)
+                    {
+                        singleResult.Text += item + '\n';
+                    }
+
+                    var singleResultList = new List<BashQuoteItem>();
+                    singleResultList.Add(singleResult);
+                    return singleResultList;
+                }
+
                 _cachedQuoteItems = result;
                 return result;
             }
@@ -241,6 +265,8 @@ namespace OrgBash.Common.Models
                     text.Contains(" has changed topic for ") ||
                     text.Contains(" is omfg") ||
                     text.Contains(" datacide looks desperate") ||
+                    text.Contains("rsynnott hopes") ||
+                    text.Contains("martin adds it") ||
                     text.Contains(" is away -")) ||
                 text.Contains(" has quit IRC") ||
                 text.Equals("10 minutes later.") ||
