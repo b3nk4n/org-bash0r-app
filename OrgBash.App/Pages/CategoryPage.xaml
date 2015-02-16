@@ -331,7 +331,7 @@
 
             <Grid x:Name="AdContainer" Grid.Row="2" Height="80" Width="480">
                 <advert:MsDuplexAdControl Height="80" Width="480" AdDuplexAppId="121575" MsAdUnitId="193252" MsApplicationId="e904cda0-0f98-4716-a5ca-3df6b67e4166" AdReceived="AdReceived" />
-                <Image x:Name="StaticBannerImage" Source="/Assets/Ads/Photo-Info_adduplex_german.png" Width="480" Height="80" Tap="PhotoInfoTapped" />
+                <Image x:Name="StaticBannerImage" Source="/Assets/Ads/Banner_PhotoMarker.png" Width="480" Height="80" Tap="PhotoInfoTapped" />
                 <Border Width="24" Height="24" Margin="1" VerticalAlignment="Top" HorizontalAlignment="Right" Background="{StaticResource PhoneAccentBrush}" Tap="RemoveAdsTapped">
                     <Path Width="18" Height="18" Canvas.Left="22.1666" Canvas.Top="22.1667" Stretch="Fill" Fill="{StaticResource ThemeBrushGray}" Data="F1 M 26.9166,22.1667L 37.9999,33.25L 49.0832,22.1668L 53.8332,26.9168L 42.7499,38L 53.8332,49.0834L 49.0833,53.8334L 37.9999,42.75L 26.9166,53.8334L 22.1666,49.0833L 33.25,38L 22.1667,26.9167L 26.9166,22.1667 Z "/>
                 </Border>
@@ -443,7 +443,7 @@
     </pages:ChangeableBackgroundPhoneApplicationPage.ApplicationBar>
 
     <i:Interaction.Behaviors>
-        <abu:AppBarItemCommand Type="Button" Id="id_prev" Text="zurück" Command="{Binding PreviousCommand}"/>
+        <abu:AppBarItemCommand Type="Button" Id="id_prev" Text="{Binding Path=LocalizedResources.AppBarPrevious, Source={StaticResource LocalizedStrings}}" Command="{Binding PreviousCommand}"/>
         <abu:AppBarToggleItemCommand Id="id_fav"
                                IsChecked="{Binding IsCurrentBashFavorite}"
                                Text="{Binding Path=LocalizedResources.AppBarAddFav, Source={StaticResource LocalizedStrings}}"
@@ -452,7 +452,7 @@
                                CheckedIconUri="/Assets/AppBar/appbar.heart.png"
                                Command="{Binding AddToFavoritesCommand}"
                                CheckedCommand="{Binding RemoveFromFavoritesCommand}" />
-        <abu:AppBarItemCommand Type="Button" Id="id_next" Text="weiter" Command="{Binding NextCommand}"/>
+        <abu:AppBarItemCommand Type="Button" Id="id_next" Text="{Binding Path=LocalizedResources.AppBarNext, Source={StaticResource LocalizedStrings}}" Command="{Binding NextCommand}"/>
         <!--<abu:AppBarItemCommand Type="Button" Id="id_neg" Text="langweilig" Command="{Binding RateNegativeCommand}"/>
         <abu:AppBarItemCommand Type="Button" Id="id_pos" Text="gefällt mir" Command="{Binding RatePositiveCommand}"/>-->
         <abu:AppBarItemCommand Type="MenuItem" Id="id_refresh" Text="{Binding Path=LocalizedResources.AppBarRefresh, Source={StaticResource LocalizedStrings}}" Command="{Binding RefreshCommand}" />

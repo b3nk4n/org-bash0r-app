@@ -229,7 +229,7 @@ namespace OrgBash.App.Pages
         private void PhotoInfoTapped(object sender, System.Windows.Input.GestureEventArgs e)
         {
             var task = new MarketplaceDetailTask();
-            task.ContentIdentifier = "ac39aa30-c9b1-4dc6-af2d-1cc17d9807cc";
+            task.ContentIdentifier = "e3c2905b-f01f-4b3e-a7eb-0f7bcd89cad9";
             task.ContentType = MarketplaceContentType.Applications;
             task.Show();
         }
