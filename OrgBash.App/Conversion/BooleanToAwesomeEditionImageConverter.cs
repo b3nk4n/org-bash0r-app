@@ -1,9 +1,4 @@
-﻿using OrgBash.App.Resources;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Data;
 
 namespace OrgBash.App.Conversion

@@ -1,11 +1,6 @@
 ﻿using OrgBash.Common.Data;
 using OrgBash.App.ViewModels;
 using Ninject.Modules;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OrgBash.App.Data;
 
 namespace OrgBash.App.Modules

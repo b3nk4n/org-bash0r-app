@@ -10,7 +10,6 @@ using System.Windows.Controls;
 using System.Windows.Media.Animation;
 using Microsoft.Phone.Tasks;
 using OrgBash.Common;
-using PhoneKit.Framework.Storage;
 using System.Windows;
 using OrgBash.App.Helpers;
 

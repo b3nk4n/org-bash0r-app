@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Resources;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
@@ -10,7 +9,6 @@ using OrgBash.App.Resources;
 using Ninject;
 using OrgBash.App.Modules;
 using PhoneKit.Framework.Support;
-using OrgBash.Common.Data;
 using OrgBash.App.ViewModels;
 using BugSense;
 using BugSense.Core.Model;
